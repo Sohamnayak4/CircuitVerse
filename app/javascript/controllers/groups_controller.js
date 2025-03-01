@@ -36,7 +36,7 @@ export default class extends Controller {
             const newLinesIntoSpacesSplitted = newLinesIntoSpaces.split(' ');
             this.value = pastedEmails.replace(/./g, '');
             newLinesIntoSpacesSplitted.forEach((value) => {
-                var tags = $('<option/>', { text: value });
+                const tags = $('<option/>', { text: value });
                 $('#group_mentor_emails').append(tags);
                 $('#group_mentor_emails option').prop('selected', true);
             });
@@ -45,7 +45,7 @@ export default class extends Controller {
             const pastedEmailsSplittedBySpace = pastedEmails.split(' ');
             this.value = pastedEmails.replace(/./g, '');
             pastedEmailsSplittedBySpace.forEach((value) => {
-                var tags = $('<option/>', { text: value });
+                const tags = $('<option/>', { text: value });
                 $('#group_mentor_emails').append(tags);
                 $('#group_mentor_emails option').prop('selected', true);
             });
@@ -94,7 +94,7 @@ export default class extends Controller {
                 const newLinesIntoSpacesSplitted = newLinesIntoSpaces.split(' ');
                 this.value = pastedEmails.replace(/./g, '');
                 newLinesIntoSpacesSplitted.forEach((value) => {
-                    var tags = $('<option/>', { text: value });
+                    const tags = $('<option/>', { text: value });
                     $('#group_member_emails').append(tags);
                     $('#group_member_emails option').prop('selected', true);
                 });
@@ -103,7 +103,7 @@ export default class extends Controller {
                 const pastedEmailsSplittedBySpace = pastedEmails.split(' ');
                 this.value = pastedEmails.replace(/./g, '');
                 pastedEmailsSplittedBySpace.forEach((value) => {
-                    var tags = $('<option/>', { text: value });
+                    const tags = $('<option/>', { text: value });
                     $('#group_member_emails').append(tags);
                     $('#group_member_emails option').prop('selected', true);
                 });
